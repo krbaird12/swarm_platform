@@ -25,7 +25,7 @@ class data_in():
 
 		ser = serial.Serial()
 		ser.baudrate = 115200
-		ser.port = '/dev/ttyACM{}'.format(port)
+		ser.port = 'COM{}'.format(port)
 		self.ser = ser
 		self.ser.open()
 
